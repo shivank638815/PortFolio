@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivank Rastogi - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/three@0.158.0/build/three.module.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="bg-canvas"></div>
+    
+    <nav class="navbar">
+        <div class="nav-logo">SR</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Updated Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Shivank Rastogi</h1>
+                <p class="tagline">Software Developer | BCA Student</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="cta-primary">View My Work</a>
+                    <a href="#contact" class="cta-secondary">Contact Me</a>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <div class="profile-circle">
+                    <div class="profile-image-container">
+                        <img src="image/image.png" alt="Shivank Rastogi" class="profile-image">
+                    </div>
+                    <div class="circle-background"></div>
+                    <div class="dotted-line"></div>
+                    <div class="dotted-line vertical"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text-container">
+                <div class="about-description">
+                    <p>Hello! I'm <span class="highlight">Shivank Rastogi</span>, a passionate BCA student and aspiring software developer. I specialize in creating modern web applications and solving complex programming challenges.</p>
+                    
+                    <p>My journey in technology started with curiosity and has evolved into a deep passion for creating impactful digital solutions. I'm constantly learning and exploring new technologies to stay at the forefront of web development.</p>
+                </div>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="highlight-text">
+                            <h4>Education</h4>
+                            <p>BCA Student at University of Allahabad</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-code"></i>
+                        <div class="highlight-text">
+                            <h4>Tech Stack</h4>
+                            <p>Full Stack Development</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-item">
+                        <i class="fas fa-rocket"></i>
+                        <div class="highlight-text">
+                            <h4>Focus</h4>
+                            <p>Web Development & AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <a href="#contact" class="cta-button">Let's Connect</a>
+                    <a href="resume/resume.pdf" class="cta-button secondary" target="_blank" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            
+            <div class="about-image-container">
+                <div class="about-image-wrapper">
+                    <img src="image/image.png"width="100"height="100" alt="About Me" class="about-image">
+                    <div class="image-decoration"></div>
+                </div>
+                <div class="experience-badge">
+                    <span class="years">2+</span>
+                    <span class="text">Years of<br>Coding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        
+        <div class="category-filter">
+            <button class="filter-pill active" data-category="all">All</button>
+            <button class="filter-pill" data-category="web">Web & Interactive</button>
+            <button class="filter-pill" data-category="programming">Programming</button>
+            <button class="filter-pill" data-category="design">Design</button>
+            <button class="filter-pill" data-category="tools">Tools</button>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Web Development Skills -->
+            <div class="skill-category" data-type="web">
+                <h3>Web Development</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </div>
+
+            <!-- Programming Skills -->
+            <div class="skill-category" data-type="programming">
+                <h3>Programming</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C/C++</li>
+                    <li>Data Structures</li>
+                    <li>Algorithms</li>
+                </ul>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="skill-category" data-type="design">
+                <h3>Design</h3>
+                <ul class="skill-list">
+                    <li>UI/UX Design</li>
+                    <li>Figma</li>
+                    <li>Adobe XD</li>
+                    <li>Responsive Layouts</li>
+                    <li>Design Systems</li>
+                </ul>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category" data-type="tools">
+                <h3>Tools & Technologies</h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                    <li>npm/yarn</li>
+                    <li>Command Line</li>
+                    <li>DevTools</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Internshala Student Partner (ISP)</h3>
+                <p class="role">Student Ambassador</p>
+            </div>
+            <div class="experience-card">
+                <h3>GirlScript Summer of Code (GSSoC) Extended 2024</h3>
+                <p class="role">Contributor</p>
+            </div>
+            <div class="experience-card">
+                <h3>LetsUpgrade EdTech Pvt Ltd</h3>
+                <p class="role">Student Ambassador</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <h3>New Year 2025</h3>
+                <p>A special New Year celebration project</p>
+                <div class="project-links">
+                    <a href="https://github.com/shivank638815/New--year-2025" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card featured">
+                <h3>Tic Tac Toe AI Game</h3>
+                <p>An advanced Tic Tac Toe game featuring an AI opponent using the Minimax algorithm.</p>
+                <a href="https://github.com/abhishek-maurya576/Tic-Tac-Toe-AI" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <div class="project-card featured">
+                <h3>Netflix Clone</h3>
+                <p>A replica of Netflix's user interface and functionality</p>
+                <div class="project-links">
+                    <a href="https://github.com/abhishek-maurya576/NetFlix-Clone" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Android Calculator App</h3>
+                <p>A functional calculator application for Android devices</p>
+            </div>
+            <div class="project-card">
+                <h3>Quiz Application</h3>
+                <p>Interactive quiz application with multiple categories</p>
+            </div>
+            <div class="project-card">
+                <h3>Weather Application</h3>
+                <p>Real-time weather information application</p>
+            </div>
+            <div class="project-card">
+                <h3>Stone Paper Scissors</h3>
+                <p>Interactive game with computer opponent</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:rastogishivank13@gmail.com">rastogishivank13@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/shivank-rastogi-b5888731a/" target="_blank">Shivank Rastogi</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/shivank638815" target="_blank">github.com/shivank638815</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/shivankrastogi88" target="_blank">@shivankrastogi88</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shivank Rastogi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
